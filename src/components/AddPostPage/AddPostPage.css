@@ -1,0 +1,43 @@
+.AddPostPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-post-form {
+    text-align: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    margin-bottom: 1.5em;
+}
+
+.text-input-box {
+    width: 250px;
+    height: 100px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.submit-post-button, .cancel-button{
+    width: 120px;
+    margin: 5px;
+}
+
+input[type="text"]{
+    width: 200px;
+}
+
+@media screen and (max-width: 354px){
+    .add-post-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

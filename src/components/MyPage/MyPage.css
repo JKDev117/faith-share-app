@@ -1,0 +1,121 @@
+.MyPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+    .my-bio {
+        text-align: center;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 661px;
+        height: 300px;
+        background-color: maroon;
+        margin-bottom: 12em;
+    }
+        .bio-user-img-and-name{
+            margin-top: 12em;
+            z-index: 1;
+        }
+            .bio-user-img{
+                border-radius: 50%;
+                width: 125px;
+                text-align: center;
+            }
+
+            .bio-username-my-page {
+                color: black;
+                font-size: 2em;
+                margin-top: 0;
+            }
+
+            .bio-info{
+                margin-bottom: 4em;
+            }
+
+        .cover-img {
+            position: absolute;
+            width: 100%;
+            max-width: 661px;
+            height: 260px;
+        }
+
+.user-posts-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin-top: 0.2em;
+}
+
+    .user-post {
+        border: 1px solid black;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        width: 550px;
+        margin-bottom: 1em;
+        background-color: rgb(233, 231, 231);
+    }
+
+        .user-img-and-name {
+            background-color: maroon;
+            text-align: center;
+            padding: 5px;
+            color: white;
+        }
+            .user-name-anchor-tag{
+                color: white;
+            }
+
+            .user-name-anchor-tag:hover{
+                color: rgb(186, 113, 118);
+            }
+
+            .user-img {
+                border-radius: 50%;
+                width: 125px;
+                text-align: center;
+            }
+
+
+        .user-post-content-and-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+            .date {
+                align-self: flex-end;
+                padding: 0;
+                margin: 0;
+                margin-right: 25px;                 
+            }
+
+            .user-post-content{
+                border: 1px solid black;
+                border-radius: 5px;
+                margin-top: 5px;
+                padding: 1em;
+                width: 80%;
+                height: 70%;
+                background-color: white;
+            }
+
+            .like-and-comment-buttons {
+                margin: 5px;
+            }
+
+
+@media screen and (max-width: 574px){
+    .user-posts-section{
+        width: 95%;
+    }
+
+    .user-post{
+        width: 100%;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,25 @@
+.RegistrationPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Link {
+
+}
+
+.registration-form {
+    text-align: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    margin-bottom: 1em;
+}
+
+button {
+    cursor: pointer;
+}

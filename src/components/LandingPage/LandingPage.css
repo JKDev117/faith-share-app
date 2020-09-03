@@ -1,0 +1,50 @@
+.LandingPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dove-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2em;
+}
+
+.app-name {
+    font-family: Trattatello;
+    font-size: 3em;
+    color: maroon;
+}
+
+
+.scripture-img {
+    width: 358px;
+    height: 269px;
+    border-radius: 50%;
+
+}
+
+.about-app {
+    text-align: center;
+    font-size: 1.1em;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 1em;
+    width: 337px;
+    max-width: 610px;
+    /*background-color: rgb(92, 26, 153, 0.2);*/
+    background-color: maroon;
+    color: white;
+}
+
+.landing-page-main-links-div {
+    margin-top: 5em;
+    margin-bottom: 6em;
+}
+
+.main-page-button, .my-page-button{
+    margin: 10px;
+    font-size: 1em;
+}
+

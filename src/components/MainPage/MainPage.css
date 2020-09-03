@@ -1,0 +1,111 @@
+.MainPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.daily-bible-verse {
+    max-width: 300px;
+    margin-bottom: 5em;
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: maroon;
+    color: white;
+    font-family: Apple Chancery;
+}
+
+.new-post-link {
+    width: 210px;
+    height: 50px;
+    font-size: 1.2em;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 1em;
+    background-color: lightgray;
+    color: black;
+}
+
+.timeline-header{
+    margin-top: 2em;
+}
+
+.users-posts-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin-top: 0.2em;
+}
+
+    .users-post {
+        border: 1px solid black;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        width: 550px;
+        margin-bottom: 1em;
+        background-color: rgb(233, 231, 231);
+    }
+
+        .users-img-and-name {
+            background-color: maroon;
+            text-align: center;
+            padding: 5px;
+            color: white;
+        }
+            .user-name-anchor-tag{
+                color: white;
+            }
+
+            .user-name-anchor-tag:hover{
+                color: rgb(186, 113, 118);
+            }
+
+            .users-img {
+                border-radius: 50%;
+                width: 125px;
+                text-align: center;
+            }
+
+
+        .users-post-content-and-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+            .date {
+                align-self: flex-end;
+                padding: 0;
+                margin: 0;
+                margin-right: 25px;                 
+            }
+
+            .users-post-content{
+                border: 1px solid black;
+                border-radius: 5px;
+                margin-top: 5px;
+                padding: 1em;
+                width: 80%;
+                height: 70%;
+                background-color: white;
+                overflow: scroll;
+            }
+
+            .like-and-comment-buttons {
+                margin: 5px;
+            }
+
+
+@media screen and (max-width: 574px){
+    .users-posts-section{
+        width: 90%;
+    }
+
+    .users-post{
+        width: 100%;
+        flex-direction: column;
+    }
+}
