@@ -91,7 +91,7 @@
                 width: 80%;
                 height: 70%;
                 background-color: white;
-                overflow: scroll;
+                overflow: auto;
             }
 
             .like-and-comment-buttons {

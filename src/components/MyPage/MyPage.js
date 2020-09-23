@@ -29,9 +29,9 @@ class MyPage extends React.Component {
                         <div className="user-post-content-and-buttons">
                             <p className="date">Aug 30</p>
                             <div className="user-post-content">
-                                If my interpretation of the Bible is correct, there will be a new strain of coronavirus named something 
-                                like chrysoscoronavirus or Covidaurum. A lot of times the Bible plays on words that become common or 
-                                clear later. Like chloroquine is a play on chloros + equine = green horse.
+                                Quantum Theory is the closest thing to secular minds catching up to the Bible. 
+                                The duality of light as particle & wave (the God-Man Jesus). Quantum nonlocality (Omnipresence). 
+                                Action at a distance or instantaneous affect of one particle on another regardless of distance (Prayer).
                             </div>
                             <div className="like-and-comment-buttons">
                                 <button className="like-button">Like</button>
@@ -65,9 +65,10 @@ class MyPage extends React.Component {
                         <div className="user-post-content-and-buttons">
                             <p className="date">July 28</p>
                             <div className="user-post-content">
-                                Quantum Theory is the closest thing to secular minds catching up to the Bible. 
-                                The duality of light as particle & wave (the God-Man Jesus). Quantum nonlocality (Omnipresence). 
-                                Action at a distance or instantaneous affect of one particle on another regardless of distance (Prayer).                            </div>
+                                If my interpretation of the Bible is correct, there will be a new strain of coronavirus named something 
+                                like chrysoscoronavirus or Covidaurum. A lot of times the Bible plays on words that become common or 
+                                clear later. Like chloroquine is a play on chloros + equine = green horse.
+                            </div>                            
                             <div className="like-and-comment-buttons">
                                 <button className="like-button">Like</button>
                                 <button className="comment-button">Comment</button>
