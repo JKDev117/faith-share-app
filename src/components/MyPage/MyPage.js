@@ -46,7 +46,7 @@ class MyPage extends React.Component {
                             <img className="user-img" src="https://i.imgur.com/1TFqjAS.jpg" alt="user-img" />
                         </div>
                         <div className="user-post-content-and-buttons">
-                            <p className="date">Aug 28</p>
+                            <p className="date">July 28</p>
                             <div className="user-post-content">
                                 "You must have a capacity to receive, or even omnipotence can't give." -C.S. Lewis
                             </div>
@@ -63,7 +63,7 @@ class MyPage extends React.Component {
                             <img className="user-img" src="https://i.imgur.com/1TFqjAS.jpg" alt="user-img" />
                         </div>
                         <div className="user-post-content-and-buttons">
-                            <p className="date">July 28</p>
+                            <p className="date">July 15</p>
                             <div className="user-post-content">
                                 If my interpretation of the Bible is correct, there will be a new strain of coronavirus named something 
                                 like chrysoscoronavirus or Covidaurum. A lot of times the Bible plays on words that become common or 
