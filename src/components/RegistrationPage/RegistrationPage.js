@@ -1,22 +1,54 @@
 import React from 'react';
 import './RegistrationPage.css';
 import { Link } from 'react-router-dom';
+import AuthApiService from '../../services/auth-api-service';
 
 class RegistrationPage extends React.Component {
-    state = {error: null}
+
+    //to store any error messages that occur when the user tries to register
+    state = { error: null };
+
+    //to handle a successful registration attempt
+    handleRegistrationSuccess = () => {
+        const { history } = this.props;
+        history.push('/login');
+    }
+
+    //to handle when the user submits information to register
+    handleSubmit = ev => {
+        ev.preventDefault();
+        const { first_name, last_name, user_name, password } = ev.target;
+        AuthApiService.postUser({
+            first_name: first_name.value,
+            last_name: last_name.value,
+            user_name: user_name.value,
+            password: password.value,
+        })
+        .then(user => {
+            first_name.value = '';
+            last_name.value = '';
+            user_name.value = '';
+            password.value = '';
+            this.handleRegistrationSuccess();
+        })
+        .catch(res => {
+            this.setState({ error: res.error });
+        });
+    };
 
     render(){
-        const { error } = this.state
+        const { error } = this.state;
         return(
             <div className="RegistrationPage">
+                
                 <Link className="Link" to="/">
                     <h1 className="app-name">Faith Share</h1>
                 </Link>
-
+                
                 <img className="dove-img" src="https://i.imgur.com/RPwFA2V.png" alt="dove-img" />
 
                 <h2 className="registration-title">Create Your Account</h2>
-                <form className="registration-form" onSubmit={()=>{}}>
+                <form className="registration-form" onSubmit={this.handleSubmit}>
                     <div role='alert'>
                        { error && <p className='red'>{error}</p> }
                     </div>    

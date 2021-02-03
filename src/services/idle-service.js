@@ -21,10 +21,19 @@ const IdleService = {
         /* queue the callback to happen _IDLE_TIME_IN_MS minutes from now */
         _timeoutId = setTimeout(_idleCallback, _IDLE_TIME_IN_MS);
     },
+    registerIdleTimerResets() {
+      /* register the resetIdleTimer for events when a user interacts with page */
+      _notIdleEvents.forEach(event =>
+        document.addEventListener(event, IdleService.resetIdleTimer, true)
+      );
+    },
+    unRegisterIdleResets() {
+      /* remove any queued callbacks and events that will queue callbacks */
+      clearTimeout(_timeoutId);
+      _notIdleEvents.forEach(event =>
+        document.removeEventListener(event, IdleService.resetIdleTimer, true)
+      );
+    },
+};
 
-
-    
-
-
-
-}
+export default IdleService;

@@ -2,7 +2,6 @@ import React, { Component} from 'react';
 import './LoginPage.css';
 import { Link } from 'react-router-dom';
 
-
 class LoginPage extends Component {
     state = {error:null}
 

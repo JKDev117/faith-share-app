@@ -1,7 +1,9 @@
-module.exports = {
+export default {
     REACT_APP_API_BASE_URL: process.env.REACT_APP_API_BASE_URL,
-    TOKEN_KEY: 'faithshare-client-auth-token'
+    TOKEN_KEY: 'faithshare-client-auth-token',
 };
+
+
 
 
 
