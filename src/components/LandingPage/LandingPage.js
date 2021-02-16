@@ -24,12 +24,6 @@ class LandingPage extends React.Component {
                     interested in Christianity in sharing links, articles, videos, chats, etc. 
                     with each other.
                 </p>
-
-                
-                
-
-
-
             </div>
         )
     }

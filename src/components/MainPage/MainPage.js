@@ -1,8 +1,37 @@
 import React, {Component} from 'react';
 import './MainPage.css';
 import { Link } from 'react-router-dom';
+import config from '../../config.js';  
+import TokenService from '../../services/token-service';
+
 
 class MainPage extends Component {
+
+    componentDidMount(){
+        const url = config.REACT_APP_API_BASE_URL + '/posts';
+        const options = {
+            method: 'GET',
+            headers: {
+                "Authorization": `Bearer ${TokenService.getAuthToken()}`,
+                "Content-Type": "application/json",
+            }
+        }
+        
+        fetch(url, options)
+            .then(res => {
+                if(!res.ok){
+                    return res.json().then(e => Promise.reject(e))
+                }
+                return res.json();
+            })
+            .then(resJson => {
+                console.log("here is response" + resJson)})
+            .catch(error => console.log(error));
+    
+    }//end componentDidMount
+
+
+
 
     render(){
         return(
